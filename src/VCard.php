@@ -95,7 +95,7 @@ class VCard
         // set property
         $this->setProperty(
             'address',
-            'ADR' . (($type != '') ? ';' . $type : '') . $this->getCharsetString(),
+            'ADR' . (($type != '') ? ';TYPE=' . $type : '') . $this->getCharsetString(),
             $value
         );
 
