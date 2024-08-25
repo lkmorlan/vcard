@@ -96,7 +96,7 @@ final class VCardParserTest extends TestCase
             'city' => "Townsville-South",
             'region' => "Area 51B",
             'zip' => "04554",
-            'country' => "Europe (no, it isn't)",
+            'country' => "Europe (no\, it isn't)",
         ));
     }
 
