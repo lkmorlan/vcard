@@ -500,6 +500,23 @@ class VCard
     }
 
     /**
+     * Add UID
+     *
+     * @param  string $uid A inique identifier.
+     * @return $this
+     */
+    public function addUid($uid)
+    {
+        $this->setProperty(
+            'uid',
+            'UID',
+            $uid
+        );
+
+        return $this;
+    }
+
+    /**
      * Add URL
      *
      * @param  string $url
