@@ -287,7 +287,7 @@ final class VCardParserTest extends TestCase
 
     public function testLabel()
     {
-        $label = 'street, worktown, workpostcode Belgium';
+        $label = 'street\, worktown\, workpostcode Belgium';
         $vcard = new VCard();
         $vcard->addLabel($label, 'work');
         $parser = new VCardParser($vcard->buildVCard());
